@@ -60,12 +60,12 @@ def plot_tmb_distribution(df_path, score, cancer, sample_name):
     circle_legend = Line2D([0], [0], marker='o', color='w', markerfacecolor='#148bcd', markersize=18, alpha=0.3)
     handles, labels = ax.get_legend_handles_labels()
     handles.append(circle_legend)
-    labels.append(f'Indian {cancer} Cancer TMB Distribution')
+    labels.append(f'{cancer} Cancer TMB Distribution')
     plt.legend(handles=handles, labels=labels, bbox_to_anchor=(0.8, -0.8), loc="lower right", frameon=False, ncol=3)
     ax.set_title('iTMB (Percentiles)', fontweight="bold", pad=40)
 
     plt.tight_layout()
-    plt.show()
+    #plt.show()
 
     # Save the figure as a PNG file
     fig.savefig(f'itmb_{cancer}_{sample_name}.png', dpi=300, format='png', bbox_inches='tight', pad_inches=0.2)
