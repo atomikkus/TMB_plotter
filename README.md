@@ -39,7 +39,7 @@ pip install -r requirements.txt
 Generate a TMB percentile plot for a single patient:
 
 ```bash
-python itmb_plotter2.py --file BASE_DATA.tsv --score 5.2 --cancer Lung --sample SAMPLE123
+python itmb_plotter2.py --file itmb_final.tsv --score 5.2 --cancer Lung --sample SAMPLE123
 ```
 - `--file`: Path to the base TMB distribution data (TSV, must have 'Broad Category Cancer Type' and 'TMB Score' columns)
 - `--score`: Patient's TMB score
@@ -52,13 +52,13 @@ Process a batch of patients from a TSV file (columns: `ID`, `Broad-Type`, `TMB`)
 
 #### Only Percentiles (no plots):
 ```bash
-python itmb_plotter2.py --file BASE_DATA.tsv --batch BATCH.tsv --only-percentiles
+python itmb_plotter2.py --file itmb_final.tsv --batch BATCH.tsv --only-percentiles
 ```
 - Outputs a new TSV file `batch_results_with_percentiles.tsv` with an added `Percentile` column for each patient.
 
 #### All (percentiles + plots):
 ```bash
-python itmb_plotter2.py --file BASE_DATA.tsv --batch BATCH.tsv --all
+python itmb_plotter2.py --file itmb_final.tsv --batch BATCH.tsv --all
 ```
 - Outputs `batch_results_with_percentiles.tsv` as above.
 - Generates a plot for each patient in the batch.
