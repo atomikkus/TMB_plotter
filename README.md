@@ -9,9 +9,6 @@ i-TMB plot is a density plot, the height of the plot at a specific point represe
 #### ** The clinical outcomes of patients with cancer can vary significantly across different geographies, highlighting the complexity of utilizing TMB as a predictive immunotherapy biomarker.
 #### ** It is important to recognize that assuming a universal criterion and cutoff for all ethnicities and geographical areas may have adverse effects on cancer patients. Therefore, caution should be exercised when interpreting TMB data, considering the diverse factors that influence its efficacy as a biomarker in clinical settings.
 
-
-![image](https://github.com/atomikkus/TMB_plotter/assets/87168509/f932b455-bc56-4a7d-91a5-036affbb4bc4)
-
 ---
 
 ## Requirements
