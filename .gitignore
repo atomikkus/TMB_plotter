@@ -1,0 +1,6 @@
+/venv
+/env
+*.zip
+*.png
+/accessory_files
+
